@@ -1,0 +1,9 @@
+name: IPA Currency Converter
+type: module
+description: Converting currency
+package: IPA Modules
+configure: ipa_currency_converter.settings
+core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal:config
+  - drupal:ultimate_cron

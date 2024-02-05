@@ -1,0 +1,20 @@
+ipa_currency_converter.system_main:
+  title: 'Currency converter'
+  route_name: entity.ipa_currency_converter_currency.collection
+  description: 'Configure currency converter'
+  parent: system.admin_config_system
+  weight: 50
+
+ipa_currency_converter.settings:
+  title: 'Settings'
+  route_name: ipa_currency_converter.settings
+  description: 'Currency converter settings'
+  parent: ipa_currency_converter.system_main
+  weight: 1
+
+ipa_currency_converter.update_currency_rates:
+  title: 'Update Rate'
+  route_name: ipa_currency_converter.update_currency_rates
+  description: 'Update currency rate from API'
+  parent: ipa_currency_converter.system_main
+  weight: 2

@@ -1,0 +1,14 @@
+ipa_currency_converter.settings:
+  title: Currencies
+  route_name: entity.ipa_currency_converter_currency.collection
+  base_route: entity.ipa_currency_converter_currency.collection
+
+ipa_currency_converter.update_currency_rates:
+  title: "Update Rates"
+  route_name: ipa_currency_converter.update_currency_rates
+  base_route: entity.ipa_currency_converter_currency.collection
+
+ipa_currency_converter.currencies:
+  title: Settings
+  route_name: ipa_currency_converter.settings
+  base_route: entity.ipa_currency_converter_currency.collection

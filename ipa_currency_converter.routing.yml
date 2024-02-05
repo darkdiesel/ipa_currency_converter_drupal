@@ -1,0 +1,47 @@
+entity.ipa_currency_converter_currency.collection:
+  path: '/admin/config/system/ipa-currency-converter'
+  defaults:
+    _entity_list: 'ipa_currency_converter_currency'
+    _title: 'Currencies'
+  requirements:
+    _permission: 'administer site configuration'
+
+ipa_currency_converter.settings:
+  path: '/admin/config/system/ipa-currency-converter/settings'
+  defaults:
+    _form: '\Drupal\ipa_currency_converter\Form\CurrencyConverterSettingsForm'
+    _title: 'Settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.ipa_currency_converter_currency.add:
+  path: '/admin/config/system/ipa-currency-converter/currency/add'
+  defaults:
+    _entity_form: ipa_currency_converter_currency.default
+    _title: 'Add currency'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.ipa_currency_converter_currency.edit_form:
+  path: '/admin/config/system/ipa-currency-converter/currency/edit/{ipa_currency_converter_currency}'
+  defaults:
+    _entity_form: ipa_currency_converter_currency.default
+    _title: 'Edit currency'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.ipa_currency_converter_currency.delete_form:
+  path: '/admin/config/system/ipa-currency-converter/currency/delete/{ipa_currency_converter_currency}'
+  defaults:
+    _entity_form: ipa_currency_converter_currency.delete
+    _title: 'Delete currency'
+  requirements:
+    _permission: 'administer site configuration'
+
+ipa_currency_converter.update_currency_rates:
+  path: '/admin/config/system/ipa-currency-converter/update_rates'
+  defaults:
+    _form: '\Drupal\ipa_currency_converter\Form\CurrencyUpdateForm'
+    _title: 'Update currency rates'
+  requirements:
+    _permission: 'administer'

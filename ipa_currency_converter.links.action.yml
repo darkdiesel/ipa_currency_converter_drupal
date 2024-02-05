@@ -1,0 +1,5 @@
+entity.ipa_currency_converter_currency.add:
+  route_name: 'entity.ipa_currency_converter_currency.add'
+  title: 'Add Currency'
+  appears_on:
+    - entity.ipa_currency_converter_currency.collection

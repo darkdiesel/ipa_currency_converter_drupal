@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * IPA currency converter module hooks.
+ */
+
+use Drupal\ipa_currency_converter\Controller\CurrencyConverterController;
+
+/**
+ * Implements hook_cron().
+ */
+function ipa_currency_converter_cron() {
+  CurrencyConverterController::updateRates();
+}
